@@ -29,7 +29,7 @@ After completing this lab, you should be able to do the following:
 
 In this lab you build the following infrastructure:
 
-# Attach L2-architecture.png here
+<img width="1178" height="544" alt="L2-architecture" src="https://github.com/user-attachments/assets/12251a67-9888-4f3b-bc57-3e67ce884ec2" />
 
 
 ## Task 1: Create Your VPC
@@ -147,9 +147,9 @@ To view the settings of these resources, browse through the VPC console links th
 
 The diagram below summarizes the VPC resources you have just created and how they are configured.
 
-# Attach L2-task1.png here
 
-​         
+<img width="1187" height="549" alt="L2-task1" src="https://github.com/user-attachments/assets/9f43eaef-ab73-4b3e-80f6-127115b66fbf" />
+
 
  
 
@@ -244,10 +244,7 @@ Note that Destination *0.0.0.0/0* is set to Target *igw-xxxxxxxx*, which is an I
 
 Now, the VPC has public and private subnets configured in two Availability Zones. The route tables you created in task 1 have also been updated to route network traffic for the two new subnets.
 
-# Attach L2-task2.png here
-
-
-
+<img width="1188" height="545" alt="L2-task2" src="https://github.com/user-attachments/assets/d5fb4277-66b1-45db-b534-6571e83f7437" />
 
 
 ## Task 3: Launch a Web Server Instance
@@ -410,7 +407,7 @@ You will now connect to the web server running on the EC2 instance.
 
 The complete architecture you deployed is:
 
-# Attach L2-end-architecture.png here
+<img width="1178" height="544" alt="L2-end-architecture" src="https://github.com/user-attachments/assets/b6c01367-2bc4-4324-8e00-346724d35029" />
 
 
 # Task 4: Connect to and Manage Your Amazon EC2 Instance

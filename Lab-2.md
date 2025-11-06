@@ -150,7 +150,11 @@ The diagram below summarizes the VPC resources you have just created and how the
 
 <img width="1187" height="549" alt="L2-task1" src="https://github.com/user-attachments/assets/9f43eaef-ab73-4b3e-80f6-127115b66fbf" />
 
+---
 
+**<p style="font-size: 300%; text-align: center; text;color:red"> STOP! </p>**
+
+Before you continue, take a picture of your VPC and the resource map similar to the one <a href="https://github.com/user-attachments/assets/aaf20d45-d175-4718-8f06-d0215924dcd6"> above</a>. This will be used as one the requirements for your **in-class submission**!
  
 
 ## Task 2: Create Additional Subnets
@@ -466,3 +470,16 @@ Remember to terminate all running EC2 instances in your console to avoid unneces
 
 <img width="1006" height="494" alt="image" src="https://github.com/user-attachments/assets/6f714399-4947-4986-8991-f0e572c24cf9" />
 
+---
+<br>
+
+# Lab Submission Requirements
+1. Screenshot Submission
+- At the end of [Task 1](#task-1-create-your-vpc), you took a screen shot of your VPC and resource map. Submit that screen shot.
+    - We should be able to see at least, 1 VPC; 2 Subnets; 3 Route Tables; and 2 Network Connections.
+    - The subnets should be named with your ITSC Email/ID.
+2. Experiment and Answer
+- In [Task 3](#task-3-launch-a-web-server-instance), we created a Web Server Instance and created a security group that allows HTTP access from anywhere in step 4. Try deleting this security group!
+    - What happens? Do you still see your test page?
+    - Why do you think this happened? Explain with details.
+- Answer these questions and submit it along with your previous screenshot.

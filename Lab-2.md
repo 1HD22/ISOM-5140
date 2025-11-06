@@ -152,7 +152,7 @@ The diagram below summarizes the VPC resources you have just created and how the
 
 ---
 
-**<p style="font-size: 300%; text-align: center; text;color:red"> STOP! </p>**
+# STOP!
 
 Before you continue, take a picture of your VPC and the resource map similar to the one <a href="https://github.com/user-attachments/assets/aaf20d45-d175-4718-8f06-d0215924dcd6"> above</a>. This will be used as one the requirements for your **in-class submission**!
  
@@ -475,7 +475,7 @@ Remember to terminate all running EC2 instances in your console to avoid unneces
 
 # Lab Submission Requirements
 1. Screenshot Submission
-- At the end of [Task 1](#task-1-create-your-vpc), you took a screen shot of your VPC and resource map. Submit that screen shot.
+- At the end of [Task 1](#stop), you took a screen shot of your VPC and resource map. Submit that screen shot.
     - We should be able to see at least, 1 VPC; 2 Subnets; 3 Route Tables; and 2 Network Connections.
     - The subnets should be named with your ITSC Email/ID.
 2. Experiment and Answer

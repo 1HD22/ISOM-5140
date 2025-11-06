@@ -477,7 +477,7 @@ Remember to terminate all running EC2 instances in your console to avoid unneces
 1. Screenshot Submission
 - At the end of [Task 1](#stop), you took a screen shot of your VPC and resource map. Submit that screen shot.
     - We should be able to see at least, 1 VPC; 2 Subnets; 3 Route Tables; and 2 Network Connections.
-    - The subnets should be named with your ITSC Email/ID.
+    - The subnets should be named with your Student ID.
 2. Experiment and Answer
 - In [Task 3](#task-3-launch-a-web-server-instance), we created a Web Server Instance and created a security group that allows HTTP access from anywhere in step 4. Try deleting this security group!
     - What happens? Do you still see your test page?

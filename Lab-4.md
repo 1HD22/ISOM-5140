@@ -592,7 +592,7 @@ Next, you'll test if you can assume the *Bucket2AccessRole* role while signed in
 # Lab Submission Requirements
 1. Screenshot Submission
    - Submit a screenshot of the 3 S3 buckets you have created in [Task 3](#task-3-creating-three-s3-buckets).
-   - Submit a screenshot of the 3 S3 buckets you accessed from your neighbor in [Challenge task 2](#challenge-task-2-allowing-cross-account-access)
+   - Submit a screenshot of the 3 S3 buckets you accessed from your neighbor in [Challenge task 2](#challenge-task-2-allowing-cross-account-access).
 2. Experiment and Answer
    - Answer the questions proposed in [Challenge task 1](#challenge-task-1-explicitly-denying-the-role-of-the-stsassumerole-action). Mainly:
       - Are you able to access *Bucket2AccessRole*?

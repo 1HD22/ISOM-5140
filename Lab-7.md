@@ -541,7 +541,7 @@ In this task, you will analyze **CloudWatch** logs and filter the log entries to
 
 - Expand  each log event and review the contents.
 
-  > Each event provides details about the action that the Lambda function took. In one of the events, you should find details showing that the inbound rules that you manually added for SMTPS (TCP port 465) and IMAPS (TCP port 993) were removed.
+  > Each event provides details about the action that the Lambda function took. In one of the events, you should find details showing that the inbound rules that you manually added for SMTPS and IMAPS were removed.
  
 
 In this task, you observed evidence in the CloudWatch logs that AWS Config invoked the Lambda function to automatically revoke the modifications that were made to the security group.

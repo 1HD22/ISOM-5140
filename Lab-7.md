@@ -96,7 +96,7 @@ In this task, you will provision two IAM Roles with proper permissions, a Lambda
    
    - Choose *Next*. 
 
-   **Step 4: Review lab-network**
+   **Step 4: Review lab-environment**
 
    - Choose *Submit*.
 

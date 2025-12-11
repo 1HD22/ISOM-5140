@@ -224,6 +224,8 @@ A banner appears briefly, and then the AWS Config Dashboard displays.
 2. In the left navigation pane, choose *Resources* to review the resource inventory that AWS Config is currently recording.
 
    <img width="700" src="https://github.com/user-attachments/assets/fcf06a9b-6278-42d8-b6ff-313d239205de" />
+   
+   > It might take some time before your resources are fully captured. **If you don't see anything under Resource Identifier, try narrowing the search by choosing *AWS EC2 SecurityGroup* under *Resource Type*.**
 
    The *Resource inventory*  page lists three security groups that AWS Config is recording, along with the default configuration recorder you set up in Step 1 (your security group IDs will differ, but they should resemble the ones shown in the reference screenshot). Recall that in Step 1, you configured AWS Config to record resources of type *EC2 SecurityGroup*, which is why these security groups now appear in the inventory. 
      
@@ -235,6 +237,8 @@ A banner appears briefly, and then the AWS Config Dashboard displays.
 - Select one of the security groups — preferably *LabSG1*  — and then choose *Resource timeline* to display all configuration items that AWS Config has captured for this resource so far.
   
   <img width="700" src="https://github.com/user-attachments/assets/93414497-1d9c-443e-a641-4769ecb76177" />
+
+  > The *Resource timeline* updates typically takes up to a few minutes. If you don't see anything here yet, try refershing the page again after a few minutes.
 
   **Important: Keep this browser tab open**. You will return to the *Resource timeline* view to observe configuration changes as you proceed through the lab.  
      
@@ -301,6 +305,8 @@ In this task, you will configure new inbound rule settings in the security group
 
 
    You should now see a new configuration item that reflects the security group update, along with the correlated CloudTrail event.
+
+   > The *Resource timeline* updates typically takes up to a few minutes. If you don't see anything here yet, try refershing the page again after a few minutes.
 
 
 In this task, you located a security group in the lab VPC and added two new inbound rules to it. Later in the lab, these changes will be treated as a security incident and automatically remediated by the configured AWS Config rule and its remediation workflow. 
@@ -405,6 +411,8 @@ As soon as you create the new rule, AWS Config automatically evaluates the  last
 5. Return to the browser tab that shows the *Resource timeline* for *LabSG1*, and refresh the page to show the latest configuration changes.
 
    <img width="700" src="https://github.com/user-attachments/assets/f69caf31-187d-434c-ba0b-87a67463f90b" />
+
+   > The *Resource timeline* updates typically takes up to a few minutes. If you don't see anything here yet, try refershing the page again after a few minutes.
  
 
 
@@ -558,11 +566,24 @@ In this task, you observed evidence in the CloudWatch logs that AWS Config invok
   > Note: Neither stopping nor deleting the recorder will delete the configuration history files already delivered to your Amazon S3 bucket. You must manage and delete those files separately if needed.
 
 
+2. Delete EC2SecurityGroup rule
 
-<img width="999" height="297" alt="image" src="https://github.com/user-attachments/assets/1adf27e7-6f05-47f4-be80-eb6233c6aee2" />
-Type confirm when you are prompted to confirm the deletion.
+- Go to the AWS Config Console.
 
-2. Delete the *lab-environment* stack
+- In the left navigation pane, choose *Resources*.
+
+- Search for the EC2 Security Group *LabSG1*.
+
+- Scroll down to find the *Rules* section.
+
+- Select *EC2SecurityGroup* and choose *Delete rule*.
+
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/1adf27e7-6f05-47f4-be80-eb6233c6aee2" />
+
+ - Type confirm when you are prompted to confirm the deletion.
+
+
+3. Delete the *lab-environment* stack
 
 - Navigate to the *CloudFormation* console.
 - On the *Stacks* page, select and delete all listed stacks in the reverse order of their creation.
